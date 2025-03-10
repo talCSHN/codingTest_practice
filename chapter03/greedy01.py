@@ -9,13 +9,3 @@ for coin in coinTypes:
     n %= coin # 260/ 260%100 = 60/ 60%50 = 10/ 10%10 = 0
 
 print(count) # 6
-
-
-# 숙지할 것
-# list(map(int, input().split()))
-# 동작 속도 빠른 입력
-# import sys
-# data = sys.stdin.readline().rstrip()
-# print(data)
-
-# 큰 수의 법칙

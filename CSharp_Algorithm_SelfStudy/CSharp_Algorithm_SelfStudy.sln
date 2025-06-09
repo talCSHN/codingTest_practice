@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35931.197 d17.13
+VisualStudioVersion = 17.13.35931.197
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sum_Algorithm", "CSharp_Algorithm\Sum_Algorithm.csproj", "{392F765B-6384-4DE9-ADC6-C39F4E02D774}"
 EndProject
@@ -12,6 +12,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prime_Number", "Prime_Number\Prime_Number.csproj", "{0727D66C-F873-4249-A214-8E1FCA40B010}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prime_Number_Count", "Prime_Number_Count\Prime_Number_Count.csproj", "{5098D9D0-47AB-4F9E-BBB9-87F4B85AC574}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Perfect_Number_Algorithm", "PerfectNumber_Algorithm\Perfect_Number_Algorithm.csproj", "{47EB5025-E999-4F69-8124-4A3E9C7E34EA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{5098D9D0-47AB-4F9E-BBB9-87F4B85AC574}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5098D9D0-47AB-4F9E-BBB9-87F4B85AC574}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5098D9D0-47AB-4F9E-BBB9-87F4B85AC574}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47EB5025-E999-4F69-8124-4A3E9C7E34EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47EB5025-E999-4F69-8124-4A3E9C7E34EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47EB5025-E999-4F69-8124-4A3E9C7E34EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47EB5025-E999-4F69-8124-4A3E9C7E34EA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

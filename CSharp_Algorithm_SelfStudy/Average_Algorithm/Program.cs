@@ -1,4 +1,4 @@
-﻿namespace Average_Algorithm
+﻿namespace Programmers_Lv1_0610
 {
     internal class Program
     {

@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System.Text;
 
 namespace Baekjoon_LinkedList_5397
 {
@@ -7,63 +8,63 @@ namespace Baekjoon_LinkedList_5397
         static void Main(string[] args)
         {
             int tcNum = int.Parse(Console.ReadLine());
-            List<string> list = new List<string>();
-            for (int k = 0; k < tcNum; k++)
+            List<string> tc = new List<string>();
+            for (int j = 0; j < tcNum; j++)
             {
-                string testCase = Console.ReadLine();
-                list.Add(testCase);
+                string temp = Console.ReadLine();
+                tc.Add(temp);
             }
-            //List<char> tmpList = new List<char>();
-            //ArrayList tmpList = new ArrayList();
-            //string tmpList = string.Empty;
-            //foreach (string tc in list)
-            //{
-            //    list.Add(tc);
-            //}
+            StringBuilder sb = new StringBuilder();
+
             for (int i = 0; i < tcNum; i++)
             {
-                //char?[] tmpList = new char?[list[i].Length];
-                List<char> tmpList = new List<char>(list[i].Length);
-                int pos = 0;
-                foreach (char c in list[i])
+                string testCase = tc[i];
+                //List<char> password = new List<char>(testCase.Length);
+                Stack<char> left = new Stack<char>();
+                Stack<char> right = new Stack<char>();
+                //var cursor = 0;
+                foreach (char c in testCase)
                 {
                     if (c == '<')
                     {
-                        if (pos > 0)
+                        if (left.Count > 0)
                         {
-                            pos -= 1;
+                            right.Push(left.Pop());
                         }
-                        else
-                        {
-                            pos = 0;
-                        }
+
                     }
                     else if (c == '>')
                     {
-                        if (pos < tmpList.Count)
+                        if (right.Count > 0)
                         {
-                            pos += 1;
+                            left.Push(right.Pop());
                         }
                     }
                     else if (c == '-')
                     {
-                        if (pos != 0)
+                        if (left.Count > 0)
                         {
-                            //tmpList[--pos] = null;
-                            tmpList.RemoveAt(--pos);
+                            left.Pop();
                         }
                     }
                     else
                     {
-                        //tmpList[pos] = c;
-                        tmpList.Insert(pos, c);
-                        pos++;
+                        left.Push(c);
                     }
                 }
-                tmpList.ForEach(c => Console.Write(c));
-                tmpList.Clear();
-                Console.WriteLine();
+                while (left.Count > 0)
+                {
+                    right.Push(left.Pop());
+                }
+                while (right.Count > 0)
+                {
+                    sb.Append(right.Pop());
+                }
+                sb.Append("\n");
+                
             }
+            Console.WriteLine(sb.ToString());
+
         }
     }
 }

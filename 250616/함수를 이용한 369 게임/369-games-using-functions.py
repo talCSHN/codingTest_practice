@@ -2,7 +2,8 @@ a, b = map(int, input().split())
 
 # Please write your code here.
 def is369(n):
-    if (n//10 == 3 or n//10 == 6 or n//10 == 9 or n%10 == 3 or n%10 == 6 or n%10 == 9):
+    n = str(n)
+    if (('3' in n) or ('6' in n) or ('9' in n)):
         return True
     else:
         return False

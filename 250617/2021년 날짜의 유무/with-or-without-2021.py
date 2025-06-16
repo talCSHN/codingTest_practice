@@ -5,12 +5,14 @@ M, D = map(int, input().split())
 dateList = []
 for i in range(1, 13):
     for j in range(1, 32):
-        if (i % 2 == 1 or i == 8):
+        if (i % 2 == 1 and i <= 8):
             dateList.append((i, j))
-        elif (i == 2 and j < 28):
+        elif (i == 8 or (i>8 and i%2 == 0)):
             dateList.append((i, j))
-            if (j == 28):
+        elif (i == 2):
+            if (j <= 28):
                 dateList.append((i, j))
+            else:
                 break
         else:
             if (j < 31):

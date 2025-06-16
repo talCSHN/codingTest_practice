@@ -30,7 +30,7 @@ def isExist(year, month, day):
         if (day <= 31):
             return True
     elif (month in range(9, 13)):
-        if (month % 2 == 1):
+        if (month % 2 == 0):
             if (day <= 31):
                 return True
         else:

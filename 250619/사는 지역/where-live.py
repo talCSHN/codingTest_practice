@@ -24,6 +24,6 @@ for _ in range(n):
     people.append(People(pname, address, pregion))
 
 people.sort(key= lambda x : x.name)
-print(people[-1].__str__())
+print(people[-1])
 
 

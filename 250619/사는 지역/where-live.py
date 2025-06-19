@@ -23,14 +23,7 @@ for _ in range(n):
     pname, address, pregion = tuple(input().split())
     people.append(People(pname, address, pregion))
 
-index = 0
-rohmoohyun = People()
-# 마 가 나 라 다
-for i in range(1, len(people)):
-    if (people[index].name < people[i].name):
-        index = i
-    rohmoohyun = people[index]
-
-print(rohmoohyun.__str__())
+people.sort(key= lambda x : x.name)
+print(people[-1].__str__())
 
 

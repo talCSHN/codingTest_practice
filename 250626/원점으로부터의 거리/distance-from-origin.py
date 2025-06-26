@@ -14,7 +14,7 @@ pointObjs = [Point(points[i][0], points[i][1][0], points[i][1][1]) for i in rang
 for i in range(n):
     if (pointObjs[i].x < 0):
         pointObjs[i].x = pointObjs[i].x * -1
-    elif (pointObjs[i].y < 0):
+    if (pointObjs[i].y < 0):
         pointObjs[i].y = pointObjs[i].y * -1
 
 distances = [(pointObjs[i].idx + 1, pointObjs[i].x + pointObjs[i].y) for i in range(n)]

@@ -18,6 +18,6 @@ for i in range(n):
         pointObjs[i].y = pointObjs[i].y * -1
 
 distances = [(pointObjs[i].idx + 1, pointObjs[i].x + pointObjs[i].y) for i in range(n)]
-distances.sort(key= lambda x: (x[1]))
+distances.sort(key= lambda x: (x[1], x[0]))
 for i in range(n):
     print(f'{distances[i][0]}')

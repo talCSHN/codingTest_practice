@@ -16,11 +16,11 @@ while True:
         m1 += 1
         d1 = 1
 
-
 day_count = elapsed_days // 7
-day_count_else = elapsed_days % 7
+day_count_else = (elapsed_days % 7)
 
-if (day_count_else >= days_of_week.index(A)):
+if (day_count_else >= days_of_week.index(A) and A != 'Sun'):
     day_count += 1
-
-print(day_count)
+    print(day_count)
+else:
+    print(day_count)

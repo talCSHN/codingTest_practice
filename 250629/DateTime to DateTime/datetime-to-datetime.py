@@ -10,9 +10,9 @@ dif_day = a - 11
 dif_hour = b - 11
 dif_min = c - 11
 
-sex = dif_day * 24 * 60
-sex1 = dif_hour * 60
-result = sex + sex1 + dif_min
+day_to_min = dif_day * 24 * 60
+hour_to_min = dif_hour * 60
+result = day_to_min + hour_to_min + dif_min
 
 if (result < 0):
     print(-1)

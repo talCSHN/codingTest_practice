@@ -3,7 +3,7 @@ A = input()
 
 # Please write your code here.
 days_of_months = [0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
-days_of_week = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+days_of_week = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
 elapsed_days = 1
 while True:
     if (m1 == m2 and d1 == d2):

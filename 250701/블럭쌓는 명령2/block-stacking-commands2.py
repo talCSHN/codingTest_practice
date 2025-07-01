@@ -2,7 +2,7 @@ n, k = map(int, input().split())
 commands = [tuple(map(int, input().split())) for _ in range(k)]
 
 # Please write your code here.
-init_arr = [0 for i in range(n)]
+init_arr = [0 for i in range(n+1)]
 max_arr = []
 count1 = 0
 # print(commands)

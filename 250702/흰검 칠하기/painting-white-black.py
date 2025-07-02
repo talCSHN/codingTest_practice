@@ -19,8 +19,8 @@ class ColorCounter:
     def getColor(self):
         return self.curr_color
 
-init_arr = [ColorCounter(whiteCount, blackCount, curr_color) for _ in range(100002)]
-curr_pos = 50001
+init_arr = [ColorCounter(whiteCount, blackCount, curr_color) for _ in range(100010)]
+curr_pos = 50005
 
 for i in range(n):
     if (dir[i] == 'R'):

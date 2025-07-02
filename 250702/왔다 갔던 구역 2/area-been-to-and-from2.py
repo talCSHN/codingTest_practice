@@ -17,7 +17,7 @@ for i in range(n):
             visit_history[j] += 1
         curr_pos = curr_pos + x[i]
     elif (dir[i] == 'L'):
-        for k in range(curr_pos - x[i] + 1, curr_pos + 1):
+        for k in range(curr_pos - x[i], curr_pos):
             visit_history[k] += 1
         curr_pos = curr_pos - x[i]
 

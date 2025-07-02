@@ -10,6 +10,6 @@ for i in range(n):
     else:
         start, end = segments[i]
     for j in range(start, end):
-        duplicate_segment[j - 1] += 1
+        duplicate_segment[j] += 1
 
 print(max(duplicate_segment))

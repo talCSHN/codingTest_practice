@@ -10,9 +10,7 @@ count1 = 0
 for i in range(k):
     start, end = commands[i]
     for j in range(start, end + 1):
-        init_arr[j - 1] = 1
+        init_arr[j - 1] += 1
     # print(init_arr)
-    max_arr.append(init_arr.count(1))
-    init_arr = [0 for i in range(n)]
-# print(max_arr)
-print(max(max_arr))
+print(init_arr)
+print(max(init_arr))

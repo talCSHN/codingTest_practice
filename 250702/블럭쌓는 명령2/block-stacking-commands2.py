@@ -12,5 +12,5 @@ for i in range(k):
     for j in range(start, end + 1):
         init_arr[j - 1] += 1
     # print(init_arr)
-print(init_arr)
+# print(init_arr)
 print(max(init_arr))

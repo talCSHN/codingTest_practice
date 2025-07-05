@@ -30,7 +30,11 @@ for x in range(2001):
             yArr.append(y)
 # xArr.sort()
 # yArr.sort()
-coverWidth = (max(xArr) - min(xArr) + 1) * (max(yArr) - min(yArr) + 1)
+coverWidth = 0
+if (xArr and yArr):
+    coverWidth = (max(xArr) - min(xArr) + 1) * (max(yArr) - min(yArr) + 1)
+else:
+    coverWidth == 0
 print(coverWidth)
 # print(xArr)
 # print(yArr)

@@ -21,18 +21,25 @@ for a1, b1, a2, b2 in rectangles:
             for y in range(b1, b2):
                 init_width[x][y] = 0
 
-xArr = []
-yArr = []
+# xArr = []
+# yArr = []
+min_x , max_x = 2001, -1
+min_y , max_y = 2001, -1
+
 for x in range(2001):
     for y in range(2001):
         if(init_width[x][y] == 1):
-            xArr.append(x)
-            yArr.append(y)
+            min_x = min(min_x, x)
+            max_x = max(max_x, x)
+            min_y = min(min_y, y)
+            max_y = max(max_y, y)
+            # xArr.append(x)
+            # yArr.append(y)
 # xArr.sort()
 # yArr.sort()
 coverWidth = 0
-if (xArr and yArr):
-    coverWidth = (max(xArr) - min(xArr) + 1) * (max(yArr) - min(yArr) + 1)
+if (max_x != -1):
+    coverWidth = (max_x - min_x + 1) * (max_y - min_y + 1)
 else:
     coverWidth == 0
 print(coverWidth)

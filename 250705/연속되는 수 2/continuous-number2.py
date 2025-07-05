@@ -1,22 +1,16 @@
+# 변수 선언 및 입력
 n = int(input())
-arr = [int(input()) for _ in range(n)]
+arr = [	int(input()) for _ in range(n)]
 
-# Please write your code here.
-cnt = 0
-cnt_arr = []
-is_block = False
-idx = 0
+ans, cnt = 0, 0
 for i in range(n):
-    if(arr[i] == 0 or arr[i] != arr[i - 1]):
-        is_block = True
-        cnt += 1
-    if(is_block and arr[i] == arr[i - 1]):
-        idx = i
-        cnt = 0
-        while (idx < n - 1 and arr[i] == arr[i - 1]):
-            cnt += 1
-            idx += 1
+	# Case 1
+	if i >= 1 and arr[i] == arr[i - 1]:
+		cnt += 1
+	# Case 2
+	else:
+		cnt = 1
+	
+	ans = max(ans, cnt)
 
-print(cnt)
-
-    
+print(ans)

@@ -43,5 +43,7 @@ for i in range(1, len(aHistory)):
     if (aHistory[i] == bHistory[i]):
         print(i)
         break
+    elif (i == len(aHistory) - 1):
+        print(-1)
 
 

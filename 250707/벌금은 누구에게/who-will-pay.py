@@ -12,6 +12,7 @@ for i in student:   # 2 5 2 3 5 2 4
             life_counts[i - 1] -= 1
         if(iterator == 6 and life_counts.count(0) == 0):
             print(-1)
+            break
         iterator += 1
     print(i)
     break
